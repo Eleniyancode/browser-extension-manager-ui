@@ -14,189 +14,286 @@
 
     <title>Frontend Mentor | Browser extensions manager UI</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <section>
-          <img src="" alt="" />
-          <p>Extensions</p>
-        </section>
-
-        <div class="theme-toggle"></div>
+        <img
+          class="logo"
+          src="./assets/images/logo.svg"
+          alt="extensions logo"
+        />
+        <p class="logo-title">Extensions</p>
+        <div class="theme-toggle">
+          <img
+            class="theme-image"
+            id="theme-image"
+            src="./assets/images/icon-sun.svg"
+            alt="dark-mood-logo"
+          />
+        </div>
       </header>
 
       <main>
-        <section>
-          <p></p>
-          <button></button>
-          <button></button>
-          <button></button>
+        <section class="main-header">
+          <p class="main-title">Extensions List</p>
+          <div>
+            <button class="btn btn-all">All</button>
+            <button class="btn btn-active">Active</button>
+            <button class="btn btn-inactive">Inactive</button>
+          </div>
         </section>
 
-        <section>
+        <section class="main-grid">
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-devlens.svg"
+                alt="logo-devlens"
+              />
+              <div class="card-description">
+                <h3>DevLens</h3>
+                <p>
+                  Quickly inspect page layouts and visualize element boundaries
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-style-spy.svg"
+                alt="logo-style-spy"
+              />
+              <div class="card-description">
+                <h3>StyleSpy</h3>
+                <p>Instantly analyze and copy CSS from any webpage element.</p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-speed-boost.svg"
+                alt="logo-speed-boost"
+              />
+              <div class="card-description">
+                <h3>SpeedBoost</h3>
+                <p>
+                  Optimizes browser resource usage to accelerate page loading.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-json-wizard.svg"
+                alt="logo-json-wizard"
+              />
+              <div class="card-description">
+                <h3>JSONWizard</h3>
+                <p>
+                  Formats, validates, and prettifies JSON responses in-browser.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-tab-master-pro.svg"
+                alt="logo-tab-master-pro"
+              />
+              <div class="card-description">
+                <h3>TabMaster Pro</h3>
+                <p>Organizes browser tabs into groups and sessions.</p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-viewport-buddy.svg"
+                alt="logo-viewport-buddy"
+              />
+              <div class="card-description">
+                <h3>ViewportBuddy</h3>
+                <p>
+                  Simulates various screen resolutions directly within the
+                  browser.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-markup-notes.svg"
+                alt="logo-markup-notes"
+              />
+              <div class="card-description">
+                <h3>Markup Notes</h3>
+                <p>
+                  Enables annotation and notes directly onto webpages for
+                  collaborative debugging.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-grid-guides.svg"
+                alt="logo-grid-guides"
+              />
+              <div class="card-description">
+                <h3>GridGuides</h3>
+                <p>
+                  Overlay customizable grids and alignment guides on any
+                  webpage.
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-palette-picker.svg"
+                alt="logo-palette-picker"
+              />
+              <div class="card-description">
+                <h3>Palette Picker</h3>
+                <p>Instantly extracts color palettes from any webpage.</p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-link-checker.svg"
+                alt="logo-link-checker"
+              />
+              <div class="card-description">
+                <h3>LinkChecker</h3>
+                <p>Scans and highlights broken links on any page.</p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-dom-snapshot.svg"
+                alt="logo-dom-snapshot"
+              />
+              <div class="card-description">
+                <h3>DOM Snapshot</h3>
+                <p>Capture and export DOM structures quickly.</p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
+
           <div class="card">
-            <div>
-              <img src="" alt="" />
-              <div></div>
+            <div class="card-info">
+              <img
+                class="card-image"
+                src="./assets/images/logo-console-plus.svg"
+                alt="logo-console-plus"
+              />
+              <div class="card-description">
+                <h3>ConsolePlus</h3>
+                <p>
+                  Enhanced developer console with advanced filtering and logging
+                </p>
+              </div>
             </div>
 
-            <div>
-              <button>Remove</button>
-              <div></div>
+            <div class="card-buttons">
+              <button class="btn btn-remove">Remove</button>
+              <div class="active-toggle"><p class="white-dot"></p></div>
             </div>
           </div>
         </section>
       </main>
     </div>
-    Extensions List All Active Inactive
-
-    <!-- If you plan to use the JSON file to populate the data dynamically, you can delete the content below -->
-
-    DevLens Quickly inspect page layouts and visualize element boundaries.
-    Remove StyleSpy Instantly analyze and copy CSS from any webpage element.
-    Remove SpeedBoost Optimizes browser resource usage to accelerate page
-    loading. Remove JSONWizard Formats, validates, and prettifies JSON responses
-    in-browser. Remove TabMaster Pro Organizes browser tabs into groups and
-    sessions. Remove ViewportBuddy Simulates various screen resolutions directly
-    within the browser. Remove Markup Notes Enables annotation and notes
-    directly onto webpages for collaborative debugging. Remove GridGuides
-    Overlay customizable grids and alignment guides on any webpage. Remove
-    Palette Picker Instantly extracts color palettes from any webpage. Remove
-    LinkChecker Scans and highlights broken links on any page. Remove DOM
-    Snapshot Capture and export DOM structures quickly. Remove ConsolePlus
-    Enhanced developer console with advanced filtering and logging. Remove
 
     <div class="attribution">
       Challenge by
